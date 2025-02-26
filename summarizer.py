@@ -64,7 +64,7 @@ def process_vakinha_csv(file_path: str) -> float:
     filtered_data = df[df['Status'] == 'Autorizado']
 
     for _, row in filtered_data.iterrows():
-        total_vakinha += row['Valor Bruto']
+        total_vakinha += row['Valor Líquido']
 
     return total_vakinha
 
