@@ -40,7 +40,7 @@ def process_pix_csv(file_path: str) -> float:
 
         total_pix += row['Valor']
 
-    return total_pix
+    return round(total_pix, 2)
 
 
 def process_vakinha_csv(file_path: str) -> float:
@@ -66,7 +66,7 @@ def process_vakinha_csv(file_path: str) -> float:
     for _, row in filtered_data.iterrows():
         total_vakinha += row['Valor Líquido']
 
-    return total_vakinha
+    return round(total_vakinha, 2)
 
 
 def main():
